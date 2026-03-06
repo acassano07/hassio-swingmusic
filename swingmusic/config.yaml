@@ -1,0 +1,26 @@
+name: "Swing Music"
+description: "Swing Music is a beautiful, self-hosted music player for your local music collection."
+version: "1.0.0"
+slug: "swingmusic"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+storage:
+  music: true
+  config: true
+ingress: true
+ingress_port: 1970
+panel_icon: mdi:music
+panel_title: Swing Music
+map:
+  - "config:rw"
+  - "share:rw"
+  - "media:rw"
+options:
+  music_path: "/media"
+schema:
+  music_path: str

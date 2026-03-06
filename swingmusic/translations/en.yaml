@@ -1,0 +1,4 @@
+configuration:
+  music_path:
+    name: "Music Path"
+    description: "The path where your music is stored (default is /media)."
