@@ -7,11 +7,13 @@ RUN apk add --no-cache \
         py3-pip \
         python3-dev \
         build-base \
+        libev \
         libev-dev \
-        ffmpeg
+        ffmpeg \
+        g++ \
+        make
 
 # Install swingmusic
-# Using --break-system-packages as this is a dedicated container
 RUN pip3 install --no-cache-dir --break-system-packages swingmusic
 
 # Copy run script
