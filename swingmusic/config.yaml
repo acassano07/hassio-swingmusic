@@ -16,6 +16,8 @@ ingress: true
 ingress_port: 1970
 panel_icon: mdi:music
 panel_title: Swing Music
+ports:
+  1970/tcp: 1970
 map:
   - "config:rw"
   - "share:rw"
