@@ -11,7 +11,10 @@ RUN apk add --no-cache \
         libev-dev \
         ffmpeg \
         g++ \
-        make
+        make \
+        ca-certificates \
+        musl-dev \
+    && update-ca-certificates
 
 # Install swingmusic
 RUN pip3 install --no-cache-dir --break-system-packages swingmusic
